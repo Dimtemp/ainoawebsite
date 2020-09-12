@@ -5,6 +5,7 @@ description: Azure training and consultancy
 plugins:
   - jekyll-remote-theme
 
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: benbalter/retlab
+
 google_analytics: UA-163618858-1
 
