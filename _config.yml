@@ -2,5 +2,5 @@ url: http://test.ainoacloud.com
 name: Ainoa cloud solutions
 description: Azure training and consultancy
 
-remote_theme: zerostaticthemes/jekyll-serif-theme
+remote_theme: benbalter/retlab
 google_analytics: UA-163618858-1
