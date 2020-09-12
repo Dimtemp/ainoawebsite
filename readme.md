@@ -1,6 +1,4 @@
-# Azure? 
-
-# Zeker Weten!
+# Azure? Sure!
 
 ## En jij bepaalt de regels: wat, wanneer en waar.
 
