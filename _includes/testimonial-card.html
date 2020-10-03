@@ -1,0 +1,17 @@
+<div class="col-md-4">
+  <div class="testimonial">
+    <div class="testimonial-card">
+      <div class="review-info">
+       {% if testimonial.review %}  <p class="text">{{testimonial.review}} </p>{% endif %}
+        <div class="review-corner"></div>
+      </div>
+    </div>
+    <div class="review-author">
+     {% if testimonial.image %} <img class="image" src="{{testimonial.image}}" alt="{{testimonial.name}}" /> {% endif %}
+      <div class="author-info mb-4">
+       {% if testimonial.name %}     <h6 class="name">{{testimonial.name}}</h6>{% endif %}
+   {% if testimonial.designation %}       <span class="label">{{testimonial.designation}}</span> {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

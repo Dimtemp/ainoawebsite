@@ -1,0 +1,164 @@
+---
+layout: default
+---
+<!-- ==================== HERO START ========================= -->
+<div class="hero-area sec-spacer d-flex align-items-center">
+  <div class="hero-wrapper ">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-8">
+          <div class="hero-content w-100 px-0 py-5 mt-0">
+            <h1 class="title text-light">Azure opleiding en consultancy</h1>
+            <h2 class="lead text-light">
+              <strong>Coaching om uw cloudreis te helpen met Microsoft Azure. </strong>
+            </h2>
+            <div class="action-btn"><a href="/contact" class="btn-primary btn btn-hero">NEEM CONTACT OP</a></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== HERO END ========================= -->
+<!-- ==================== PARTNER START ========================= -->
+<div class="partner-area inner-spacer bg-3">
+  <div class="container">
+    <div class="partner-slider overflow-hidden">
+      {% for partner in site.data.partner-logos %}
+      <div class="item">
+        <img src="{{partner.logo}}" alt="{{partner.title}}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- ==================== PARTNER END ========================= -->
+<!-- ==================== SERVICE START ========================= -->
+<div class="service-area sec-spacer pb-0">
+  <div class="service-block service-block-v">
+    <div class="shape"></div>
+    <div class="container">
+      <div class="service-wrapper ">
+        <div class="service-feature order-12">
+          <!--  <span class="badge badge-mobile">PINPOINT PROOF OF WORK</span> -->
+          <span class="badge">NEW</span>
+          <h3 class="title">Azure? Sure!</h3>
+          <p class="text">  Microsoft Azure is een Cloud dienst met heel veel mogelijkheden. Vanuit grote datacenters biedt Azure allerlei diensten, zoals servers, virtuele machines, websites en databases. Het voordeel is dat je vlot en makkelijk gebruik kunt maken van dit soort diensten, zonder je druk te hoeven maken over de onderliggende infrastructuur. Dit bespaart klanten veel tijd en geld.</p>
+          <p class="text">Azure bestaat uit een uitgebreide set cloudservices waarmee ontwikkelaars en ICT-professionals toepassingen bouwen, implementeren en beheren in een wereldwijde netwerk van datacenters. Geïntegreerde tools, DevOps en een marketplace bieden ondersteuning bij het bouwen van allerlei zaken, van eenvoudige mobiele apps tot internetoplossingen.  </p>
+          <p class="text">Je zou Azure kunnen vergelijken met water uit de kraan. Je zou natuurlijk zelf een waterput kunnen slaan en met een emmer water gaan putten, maar hoe fijn is het dat je dit kan laten leveren door een bedrijf dat hierin gespecialiseerd is? Een waterleverancier met een hele infrastructuur erachter, die jou allerlei garanties biedt en je per maand factureert. Hetzelfde geldt voor Azure, alleen dan voor je ICT infrastructuur in plaats van je glaasje water.  </p>
+ 
+        </div>
+        <div class="service-media order-1 px-4 py-4">
+          <img class="themeix-scroll-effect-no" src="{{'/assets/images/service/service-img-big-3.png' | relative_url}}" alt="service media" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== SERVICE END ========================= -->
+<!-- ==================== SERVICE START ========================= -->
+<div class="service-area sec-spacer ">
+  <div class="container">
+    <div class="section-title inner-spacer text-center pt-0">
+      <h2 class="title w-75 mx-auto">Smart Learning @home of Study Smart @home of
+        Intelligente lockdown</h2>
+    </div>
+  </div>
+  <div class="service-block">
+    <div class="shape"></div>
+    <div class="container">
+      <div class="service-wrapper">
+        <div class="service-feature">
+          <!--  <span class="badge badge-mobile">PINPOINT PROOF OF WORK</span> -->
+          <span class="badge">HOT DEAL</span>
+          <h3 class="title">Volg je training @home en doe je examen online</h3>
+          <p class="text">Bij AinoA Cloud Solutions bepaal jíj wat je wilt leren; waar de focus moet liggen, extra aandacht gewenst is en waar dat minder nodig is. Ook kies jij waar je de training wil volgen. Zo benutten we jouw tijd efficiënt, bespaar je kosten en halen we het maximale uit de training voor jou. Daarna maak je direct de vertaalslag naar de eigen praktijk.
+
+         
+            
+           </p>
+          <p class="text">   Op deze site vind je duidelijk en concreet in een overzichtelijk aanbod alle Azure trainingen, hoeveel dagen een training duurt en wat de kosten zijn op één pagina. </p>
+          <p class="text">  Als jij aan het einde van een training moe maar voldaan, met een hoofd vol kennis, staat te popelen om met je nieuwe inzichten aan het werk te gaan: dan hebben wij ons werk goed gedaan. Wie zijn wij? Dimitri Koens en Eric van Laar, trainers die met de laarzen in de modder staan en jarenlange ervaring hebben. En wij staan te popelen om jou aan die Azure kennis te helpen met een aantal praktische trainingen. </p>
+        
+          <div class="action-group">
+            <a href="#" class="btn-primary btn btn-demo">Training Programs</a>
+            <a href="#" class="btn-primary btn btn-learn">Contact</a>
+          </div>
+        </div>
+        <div class="service-media">
+          <img class="themeix-scroll-effect-no  px-4 py-4" src="{{'/assets/images/service/service-img-big-2.png' | relative_url}}" alt="service media" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ==================== SERVICE END ========================= -->
+
+<!-- ==================== FEATURE START ========================= -->
+<div class="feature-area inner-spacer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title inner-spacer text-center pt-0">
+          <h2 class="title">Trainingsaanbod</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+	   {% assign myservice = site.services %}
+      {% assign sorted_service = myservice | sort:"order" %}
+					 
+      {% for service in sorted_service %}
+        {% include service-card.html %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- ==================== FEATURE END ========================= -->
+<!-- ==================== CLIENT START ========================= -->
+<div class="client-area sec-spacer bg-2">
+  <div class="container">
+    <div class="section-title inner-spacer text-center pt-0">
+      <h2 class="title">Referenties</h2>
+    </div>
+    <div class="row">
+      {% for testimonial in site.data.testimonials limit:6 %}
+      {% if testimonial.show_in_homepage %}
+        {% include testimonial-card.html %}
+      {% endif %}
+      {% endfor %}
+	  <div class="action-btn mt-4 testi-btn mx-auto"><a href="/testimonials" class="btn-primary btn btn-hero">
+Verkoop Alle Referenties</a></div>
+    </div>
+  </div>
+</div>
+<!-- ==================== CLIENT END ========================= -->
+<div class="blog-grid-area sec-spacer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title inner-spacer text-center pt-0">
+          <h2 class="title">Latest News & Updates</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="single-slider overflow-hidden">
+          {% for post in site.posts %}
+          <div class="item">
+            {% include post-card.html %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include call-to-action.html %}
+<!-- ==================== HOW WORK START ========================= -->
+ 
+<!-- ==================== HOW WORK END ========================= -->

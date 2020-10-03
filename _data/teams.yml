@@ -1,0 +1,14 @@
+- name: Dimitri Koens
+  bio: AZ-900 Microsoft Azure Fundamentals
+  image: /assets/images/team-member/team-member-1.jpg
+  show_in_teampage: true
+  
+- name: Eric van Laar
+  bio: AZ-900 Microsoft Azure Fundamentals
+  image: /assets/images/team-member/team-member-1.jpg
+  show_in_teampage: true 
+  
+- name: Carla Hofland
+  bio: AZ-900 Microsoft Azure Fundamentals
+  image: /assets/images/team-member/team-member-1.jpg
+  show_in_teampage: true

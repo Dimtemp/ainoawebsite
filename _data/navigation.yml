@@ -1,0 +1,15 @@
+- text: Home
+  url: /
+- text: Opleiding
+  url: /training
+  submenu:
+    - text: AZ-900 Azure fundamentals
+      url: /service/azure-fundamentals-az-900/
+    - text: AZ-103 / AZ-104 Azure infrastructure
+      url: /service/azure-architect-boot-camp-az-300-az-301/
+- text: Ons team
+  url: /our-team
+- text: Nieuws & Updates
+  url: /blog
+- text: Contact
+  url: /contact

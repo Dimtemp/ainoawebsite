@@ -1,0 +1,66 @@
+<div class="single-author-box border mb-4">
+      <div class="row d-flex align-items-center">
+	   {% if team.image %}  
+        <div class="col-md-3 author-profile-image">
+          <img src="{{team.image}}" alt="{{team.title}}">
+        </div>
+		{% endif %}
+        <div class="col-md-9">
+          <div class="author-header-content ">
+            <div class="author-header-inner">
+              <h3 class="author"><a class="text-decoration-none" href="{{team.url}}">{{team.title}}</a></h3>
+			{% if team.description %}             
+			        
+		   <p class="bio">
+                {{team.description}}
+              </p>
+			  {% endif %}
+              <!-- social icon -->
+       
+              <div class="author-profile-link d-flex align-items-center flex-wrap">
+			  {% if team.facebook_link %}
+                <a target="_blank" href="{{team.facebook_link}}">
+                  <i class="fa fa-facebook"></i>
+                </a>
+				{% endif %}
+				 {% if team.twitter_link %}
+                <a target="_blank" href="{{team.twitter_link}}">
+                  <i class="fa fa-twitter"></i>
+                </a>
+				{% endif %}
+				 {% if team.youtube_link %}
+                <a target="_blank" href="{{team.youtube_link}}">
+                  <i class="fa fa-youtube"></i>
+                </a>
+				{% endif %}
+				 {% if team.linkedin_link %}
+                <a target="_blank" href="{{team.linkedin_link}}">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+				{% endif %}
+				 {% if team.pinterest_link %}
+                <a target="_blank" href="{{team.pinterest_link}}">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+				{% endif %}
+				 {% if team.github_link %}
+                <a target="_blank" href="{{team.github_link}}">
+                  <i class="fa fa-github"></i>
+                </a>
+				{% endif %}
+				 {% if team.email %}
+                <a target="_blank" href="mailto:{{team.email}}">
+                   <i class="fa fa-envelope"></i>
+                </a>
+				{% endif %}
+				 {% if team.website_link %}
+                <a target="_blank" href="{{team.website_link}}">
+                   <i class="fa fa-link"></i>
+                </a>
+				{% endif %}				
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

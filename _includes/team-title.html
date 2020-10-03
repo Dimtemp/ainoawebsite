@@ -1,0 +1,51 @@
+<div class="page-title-wrapper-2-area">
+    <div class="container">
+       <div class="page-title-wrapper-2">
+          <h1 class="title">{{page.title}}</h1>
+          <p class="text w-75">{{page.description}}</p>
+		         
+              <div class="author-profile-link d-flex align-items-center flex-wrap">
+			  {% if page.facebook_link %}
+                <a target="_blank" href="{{page.facebook_link}}">
+                  <i class="fa fa-facebook"></i>
+                </a>
+				{% endif %}
+				 {% if page.twitter_link %}
+                <a target="_blank" href="{{page.twitter_link}}">
+                  <i class="fa fa-twitter"></i>
+                </a>
+				{% endif %}
+				 {% if page.youtube_link %}
+                <a target="_blank" href="{{page.youtube_link}}">
+                  <i class="fa fa-youtube"></i>
+                </a>
+				{% endif %}
+				 {% if page.linkedin_link %}
+                <a target="_blank" href="{{page.linkedin_link}}">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+				{% endif %}
+				 {% if page.pinterest_link %}
+                <a target="_blank" href="{{page.pinterest_link}}">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+				{% endif %}
+				 {% if page.github_link %}
+                <a target="_blank" href="{{page.github_link}}">
+                  <i class="fa fa-github"></i>
+                </a>
+				{% endif %}
+				 {% if page.email %}
+                <a target="_blank" href="mailto:{{page.email}}">
+                   <i class="fa fa-envelope"></i>
+                </a>
+				{% endif %}
+				 {% if page.website_link %}
+                <a target="_blank" href="{{page.website_link}}">
+                   <i class="fa fa-link"></i>
+                </a>
+				{% endif %}				
+              </div>
+       </div>
+    </div>
+ </div>
