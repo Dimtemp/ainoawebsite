@@ -98,11 +98,42 @@
         scrollTop: 0
       }, 500, "easeOutCubic");
     });
+	
+	
+	
 
   }
 
-
   scrolltop();
+  /*  headder bg  */
+  function tt() {
+
+
+    var wind = $(window);
+
+    wind.on("scroll", function () {
+
+      var scrollTop = wind.scrollTop();
+
+      if (scrollTop >= 100) {
+
+        $(".header-area").addClass("bg-primary");
+
+      } else {
+
+        $(".header-area").removeClass("bg-primary");
+      }
+
+    });
+
+ 
+	
+
+  }
+
+  tt();
+  
+
 
   /*  AOS  */
   AOS.init({
