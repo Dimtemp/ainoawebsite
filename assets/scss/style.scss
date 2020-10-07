@@ -2226,7 +2226,7 @@ input#service-id:hover {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 180px;
+ 
 }
 
 .single-info {
@@ -3047,11 +3047,30 @@ input#service-id:hover {
     color: lighten($primary, 46%);
   }
 }
-
+.page-title-wrapper-2-area {
+    background-color: #4f7694;
+    background-image: url(../images/blog-hero.jpg);
+	background-size: cover;
+	position: relative;
+	  &:after {
+    content: '';
+    background: rgba($primary, .7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+.page-title-wrapper-2.text-light a, .page-title-wrapper-2.text-light i {
+    color: #fff;
+}
 .page-title-wrapper-2 {
   padding-top: 180px;
   padding-bottom: 80px;
-
+		z-index: 2;
+    position: relative;
   .title {
     margin-top: 0;
     margin-bottom: 24px;
@@ -4731,7 +4750,7 @@ input#service-id:hover {
     max-height: 60px;
 }
 .hero-area.sec-spacer {
-    background: url(/assets/images/main-hero.jpg);
+    background: url(../images/main-hero.jpg);
     background-size: cover;
 	min-height: 100vh;
 }

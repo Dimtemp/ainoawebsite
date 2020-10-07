@@ -3,94 +3,48 @@
 # Welcome to Bizzcon Jekyll Template
 #
 # Product Link : https://themeix.com/product/bizzcon-jekyll-template/
-# Version : v1.0.0
+# Version : v1.0.0 ( Github Pages Version )
 #
 ####################################################
 
 # Site settings
-title: "Azure &bull; AinoA"
-email: "themeix@gmail.com"
-logo_url: /assets/images/logo.png
-logo_url_white: /assets/images/logo-white.png
+title                   : "Azure &bull; AinoA"
+SEOTitle                : "Azure &bull; AinoA"
+header-img              : img/home-bg.jpg
+email                   : "themeix@gmail.com"
+description             : "Azure bestaat uit een uitgebreide set cloudservices waarmee ontwikkelaars en IT-professionals toepassingen bouwen, implementeren en beheren in een wereldwijde netwerk van datacenters."
+keyword: "Azure"
+url                     : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                 : # the subpath of your site, e.g. "/blog"
+logo_url                : /assets/images/logo.png
+logo_url_white          : /assets/images/logo-white.png
 footer_logo_url: /assets/images/logo.png
-description: "Azure bestaat uit een uitgebreide set cloudservices waarmee ontwikkelaars en IT-professionals toepassingen bouwen, implementeren en beheren in een wereldwijde netwerk van datacenters."
-keywords: "Azure, "
 
-mailclimp_url: '#'
-dribble_url: https://dribble.com/themeix
-facebook_url: https://facebook.com/themeix
-instagram_url: https://instagram.com/themeix
-youtube_url: https://youtube.com/themeix
-twitter_url: https://twitter.com/themeix_com
-linkedin_url: https://linkedin.com/themeix
-pinterest_url: https://pinterest.com/themeix
+mailclimp_url           : 
+dribble_url             :  
+facebook_url            :  
+instagram_url           : 
+youtube_url             : 
+twitter_url             : 
+linkedin_url            : 
+pinterest_url           : 
 
 
 # Build settings
-permalink: /:slugified_categories/:title
+permalink: /:title
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
   - jekyll-archives
 
 
-# Site configuration for the Jekyll 2 Pagination Gem
-pagination:
-  enabled: true
-  debug: true
-  collection: 'posts'
-  per_page: 15
-  permalink: '/pages/:num/' # Pages are simple html files 
-  title: ':title - page :num'
-  limit: 0 
-  sort_field: 'date'
-  sort_reverse: true
-  category: 'posts'
-  tag: ''
-  locale: '' 
-  trail: 
-    before: 2
-    after: 
-  extension: 'html'
-  indexpage: 'index'
-
-autopages:
-  enabled: true
-  categories: 
-    layouts: 
-      - 'category.html'
-    title: 'Category -  :cat'
-    permalink: '/category/:cat'
-    slugify:
-        mode: 'raw'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
-        case: false       # Whether to replace all uppercase letters with their lowercase counterparts        
-  collections:
-    layouts: 
-      - 'category.html'
-    title: ' :coll' # :coll is replaced by the collection name
-    permalink: '/:coll/'
-    
-  
-  tags:
-    layouts: 
-      - 'tag.html'
-    title: 'Tag - :tag' # :tag is replaced by the tag name
-    permalink: '/tag/:tag' 
-    slugify:
-        mode: 'raw'   # :cat is slugified. Modes: default, raw, pretty, ascii, latin
-        case: false       # Whether to replace all uppercase letters with their lowercase counterparts        
-      
-tag_page_layout: category
-tag_page_dir: tag
-tag_permalink_style: pretty
 
 jekyll-archives:
   enabled: all
   layout: category
   permalinks:
     category: '/category/:name/'
+    
  
 collections:
   authors:
@@ -108,3 +62,4 @@ feed:
     posts:
       path: "/index.xml"
      
+theme: jekyll-theme-minimal
