@@ -1,10 +1,10 @@
 <div class="col-sm-6 col-md-6">
   <div class="feature-block">
-   {% if service.service_img %}   <div class="logo pb-3"><img class="themeix-scroll-effect" src="{{service.service_img}}" alt="feature block" />
+   {% if service.service_img %}   <div class="logo pb-3"><img class="themeix-scroll-effect" src="{{service.service_img | relative_url}}" alt="feature block" />
     </div>
 	{% endif %}
-    <h3 class="title pb-3"> <a class="text-decoration-none " href="{{service.url}}">{{service.title}}</a></h3>
+    <h3 class="title pb-3"> <a class="text-decoration-none " href="{{service.url | relative_url}}">{{service.title}}</a></h3>
     <p class="px-3">{{service.description}}</p>
-    <a class="text-decoration-none " href="{{service.url}}">Read more</a>
+    <a class="text-decoration-none " href="{{service.url | relative_url}}">Read more</a>
   </div>
 </div>

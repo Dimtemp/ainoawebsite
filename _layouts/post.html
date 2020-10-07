@@ -4,27 +4,23 @@ layout: default
 
 {% assign author = site.authors | where: 'author_id', page.author_id | first %}
 <!-- ==================== SINGLE START ========================= -->
+<div class="blog-area">
+  <div class="blog-header bg-primary"  >
+    <div class="container">
+      <div class="blog-header-content text-center">
+        <h1 class="title w-75 mx-auto">{{page.title }}</h1>
+        
+      </div>
+    </div>
+  </div>
+
 <div class="single-area">
   <div class="container">
     <div class="single-wrapper">
-      <div class="single-info">
-        {% for category in page.categories %}
-        <a class="badge"  href="/category/{{category | slugify}}">
-          {{ category }}
-        </a>
-        {% endfor %}
-        <h1 class="single-title pb-5">{{page.title}}</h1>
-        <img src="{{page.post_image}}" alt="{{page.title}}">
-      </div>
+ 
       <div class="entry-content inner-spacer">
         {{page.content}}
-        <div class="single-post-tags w-100">
-          <ul class="list-inline mb-0">
-            {% for tag in page.tags %}
-            <li class="list-inline-item"><a href="/tag/{{ tag | slugize }}/">#{{ tag }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+  
       </div>
     </div>
   </div>
@@ -39,7 +35,7 @@ layout: default
               {% if page.previous.url %}
               <div class="next_prv_single text-left border py-4 px-4">
                 <p class="text-muted">Previous Article</p>
-                <h4><a class="text-decoration-none" href="{{page.previous.url}}">{{page.previous.title}}</a>
+                <h4><a class="text-decoration-none" href="{{page.previous.url  | relative_url}}">{{page.previous.title}}</a>
                 </h4>
               </div>
               {% endif %}
@@ -48,7 +44,7 @@ layout: default
               {% if page.next.url %}
               <div class="next_prv_single text-right border py-4 px-4">
                 <p class="text-muted">Next Article</p>
-                <h4><a class="text-decoration-none" href="{{page.next.url}}">{{page.next.title}}</a></h4>
+                <h4><a class="text-decoration-none" href="{{page.next.url  | relative_url}}">{{page.next.title}}</a></h4>
               </div>
               {% endif %}
             </div>
@@ -65,7 +61,7 @@ layout: default
     <div class="single-author-box border mb-4">
       <div class="row d-flex align-items-center">
         <div class="col-md-3 author-profile-image">
-          <img src="{{author.image}}" alt="{{author.name}}">
+          <img src="{{author.image  | relative_url}}" alt="{{author.name}}">
         </div>
         <div class="col-md-9">
           <div class="author-header-content ">

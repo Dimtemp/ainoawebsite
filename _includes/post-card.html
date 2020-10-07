@@ -1,21 +1,17 @@
 <div class="post-card" id="{{post.post_id}}">
   <div class="feature-image">
-    <a href="{{post.url}}"><img class="img-fluid" src="{{post.post_image}}" alt="{{post.title}}"></a>
-    <div class="cat-badge">
-      {% for category in post.categories %}
-      <a class="post-badge" href="/category/{{category | slugify}}">{{category}}</a>
-      {% endfor %}
-    </div>
+    <a href="{{post.url  | relative_url}}"><img class="img-fluid" src="{{post.post_image  | relative_url}}" alt="{{post.title}}"></a>
+
 
   </div>
   <div class="post-card-info">
     <span class="post-date">{{post.date | date: '%B %d. %Y'}}</span>
-    <a class="text-decoration-none" href="{{post.url}}">
+    <a class="text-decoration-none" href="{{post.url  | relative_url}}">
       <h3 class="title">{{post.title}}</h3>
     </a>
     <p class="text">{{post.excerpt}}</p>
     <div class="post-card-bottom">
-      <a href="{{post.url}}" class="readmore-btn">Read More</a>
+      <a href="{{post.url  | relative_url}}" class="readmore-btn">Read More</a>
     </div>
   </div>
 </div>

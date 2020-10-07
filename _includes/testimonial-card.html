@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="review-author">
-     {% if testimonial.image %} <img class="image" src="{{testimonial.image}}" alt="{{testimonial.name}}" /> {% endif %}
+     {% if testimonial.image %} <img class="image" src="{{testimonial.image | relative_url}}" alt="{{testimonial.name}}" /> {% endif %}
       <div class="author-info mb-4">
        {% if testimonial.name %}     <h6 class="name">{{testimonial.name}}</h6>{% endif %}
    {% if testimonial.designation %}       <span class="label">{{testimonial.designation}}</span> {% endif %}
