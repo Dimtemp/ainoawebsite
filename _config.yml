@@ -8,6 +8,7 @@
 ####################################################
 
 # Site settings
+google_analytics        : UA-163618858-1
 title                   : "AinoA Cloud Solutions &bull; Azure training & consultancy"
 SEOTitle                : "AinoA Cloud Solutions &bull; Azure training & consultancy"
 header-img              : img/home-bg.jpg
