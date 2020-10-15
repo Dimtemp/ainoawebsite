@@ -38,8 +38,6 @@ layout: default
           <!--  <span class="badge badge-mobile">PINPOINT PROOF OF WORK</span> -->
           <span class="badge">Badge</span>
           <h3 class="title">Volg je training @home en doe je examen online</h3>
-          <p class="text">Bij AinoA Cloud Solutions bepaal jíj wat je wilt leren; waar de focus moet liggen, extra aandacht gewenst is en waar dat minder nodig is. Ook kies jij waar je de training wil volgen. Zo benutten we jouw tijd efficiënt, bespaar je kosten en halen we het maximale uit de training voor jou. Daarna maak je direct de vertaalslag naar de eigen praktijk.</p>
-          <p class="text">Op deze site vind je duidelijk en concreet in een overzichtelijk aanbod alle Azure trainingen, hoeveel dagen een training duurt en wat de kosten zijn op één pagina. </p>
           <p class="text">Als jij aan het einde van een training moe maar voldaan, met een hoofd vol kennis, staat te popelen om met je nieuwe inzichten aan het werk te gaan: dan hebben wij ons werk goed gedaan. Wie zijn wij? Dimitri Koens en Eric van Laar, trainers die met de laarzen in de modder staan en jarenlange ervaring hebben. En wij staan te popelen om jou aan die Azure kennis te helpen met een aantal praktische trainingen. </p>
           <div class="action-group">
             <a href="#" class="btn-primary btn btn-learn">Contact</a>
@@ -75,7 +73,26 @@ layout: default
 </div>
 <!-- ==================== FEATURE END ========================= -->
 
-<!-- ==================== PARTNER START ========================= -->
+<!-- ==================== REFERENTIES CLIENT START ========================= -->
+<div class="client-area sec-spacer bg-2">
+  <div class="container">
+    <div class="section-title inner-spacer text-center pt-0">
+      <h2 class="title">Referenties</h2>
+    </div>
+    <div class="row">
+      {% for testimonial in site.data.testimonials limit:6 %}
+      {% if testimonial.show_in_homepage %}
+        {% include testimonial-card.html %}
+      {% endif %}
+      {% endfor %}
+	  <div class="action-btn mt-4 testi-btn mx-auto"><a href="/testimonials" class="btn-primary btn btn-hero">
+Bekijk alle referenties</a></div>
+    </div>
+  </div>
+</div>
+<!-- ==================== REFERENTIES CLIENT END ========================= -->
+
+<!-- ==================== carrousel START ========================= -->
 <div class="partner-area inner-spacer bg-3">
   <div class="container">
     <div class="partner-slider overflow-hidden">
@@ -87,9 +104,9 @@ layout: default
     </div>
   </div>
 </div>
-<!-- ==================== PARTNER END ========================= -->
+<!-- ==================== carrousel END ========================= -->
 
-<!-- ==================== SERVICE START ========================= -->
+<!-- ==================== wat is azure SERVICE START ========================= -->
 <div class="service-area sec-spacer pb-0">
   <div class="service-block service-block-v">
     <div class="shape"></div>
@@ -110,26 +127,7 @@ layout: default
     </div>
   </div>
 </div>
-<!-- ==================== SERVICE END ========================= -->
-
-<!-- ==================== REFERENTIES CLIENT START ========================= -->
-<div class="client-area sec-spacer bg-2">
-  <div class="container">
-    <div class="section-title inner-spacer text-center pt-0">
-      <h2 class="title">Referenties</h2>
-    </div>
-    <div class="row">
-      {% for testimonial in site.data.testimonials limit:6 %}
-      {% if testimonial.show_in_homepage %}
-        {% include testimonial-card.html %}
-      {% endif %}
-      {% endfor %}
-	  <div class="action-btn mt-4 testi-btn mx-auto"><a href="/testimonials" class="btn-primary btn btn-hero">
-Bekijk alle referenties</a></div>
-    </div>
-  </div>
-</div>
-<!-- ==================== REFERENTIES CLIENT END ========================= -->
+<!-- ==================== wat is azure SERVICE END ========================= -->
 
 <div class="blog-grid-area sec-spacer">
   <div class="container">
