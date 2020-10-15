@@ -1,13 +1,21 @@
 - text: Home
   url: /
-- text: Opleiding
+- text: Training
   url: /training
   submenu:
-    - text: AZ-900 Azure fundamentals
+    - text: Azure fundamentals AZ-900
       url: /service/azure-fundamentals-az-900/
-    - text: AZ-103 / AZ-104 Azure infrastructure
-      url: /service/azure-architect-boot-camp-az-300-az-301/
-- text: Ons team
+    - text: Azure Administrator AZ-104
+      url: /service/azure-administrator/
+    - text: Azure Cost Management
+      url: /service/azure-cost-management/
+    - text: Azure Architect Boot Camp AZ-303-304
+      url: /service/azure-architect-boot-camp-az-303-304/
+    - text: Azure Data Platfrom Boot Camp AZ-200-201
+      url: /service/azure-data-platform-bootcamp-dp-200-201/
+    - text: Azure Relational Databases AZ-300
+      url: /service/azure-relational-dp-300/
+- text: Team
   url: /our-team
 - text: Nieuws & Updates
   url: /blog
