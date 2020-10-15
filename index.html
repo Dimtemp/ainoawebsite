@@ -55,20 +55,6 @@ layout: default
 </div>
 <!-- ==================== SERVICE END ========================= -->
 
-<!-- ==================== PARTNER START ========================= -->
-<div class="partner-area inner-spacer bg-3">
-  <div class="container">
-    <div class="partner-slider overflow-hidden">
-      {% for partner in site.data.partner-logos %}
-      <div class="item">
-        <img src="{{partner.logo}}" alt="{{partner.title}}" />
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-<!-- ==================== PARTNER END ========================= -->
-
 <!-- ==================== FEATURE START ========================= -->
 <div class="feature-area inner-spacer">
   <div class="container">
@@ -90,6 +76,20 @@ layout: default
   </div>
 </div>
 <!-- ==================== FEATURE END ========================= -->
+
+<!-- ==================== PARTNER START ========================= -->
+<div class="partner-area inner-spacer bg-3">
+  <div class="container">
+    <div class="partner-slider overflow-hidden">
+      {% for partner in site.data.partner-logos %}
+      <div class="item">
+        <img src="{{partner.logo}}" alt="{{partner.title}}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- ==================== PARTNER END ========================= -->
 
 <!-- ==================== SERVICE START ========================= -->
 <div class="service-area sec-spacer pb-0">
