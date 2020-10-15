@@ -52,7 +52,7 @@ layout: default
 </div>
 <!-- ==================== SERVICE END ========================= -->
 
-<!-- ==================== FEATURE START ========================= -->
+<!-- ==================== Trainingsaanbod FEATURE START ========================= -->
 <div class="feature-area inner-spacer bg-2">
   <div class="container">
     <div class="row">
@@ -71,7 +71,21 @@ layout: default
     </div>
   </div>
 </div>
-<!-- ==================== FEATURE END ========================= -->
+<!-- ==================== Trainingsaanbod FEATURE END ========================= -->
+
+<!-- ==================== carrousel START ========================= -->
+<div class="partner-area inner-spacer bg-3">
+  <div class="container">
+    <div class="partner-slider overflow-hidden">
+      {% for partner in site.data.partner-logos %}
+      <div class="item">
+        <img src="{{partner.logo}}" alt="{{partner.title}}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- ==================== carrousel END ========================= -->
 
 <!-- ==================== REFERENTIES CLIENT START ========================= -->
 <div class="client-area sec-spacer bg-2">
@@ -91,20 +105,6 @@ Bekijk alle referenties</a></div>
   </div>
 </div>
 <!-- ==================== REFERENTIES CLIENT END ========================= -->
-
-<!-- ==================== carrousel START ========================= -->
-<div class="partner-area inner-spacer bg-3">
-  <div class="container">
-    <div class="partner-slider overflow-hidden">
-      {% for partner in site.data.partner-logos %}
-      <div class="item">
-        <img src="{{partner.logo}}" alt="{{partner.title}}" />
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-<!-- ==================== carrousel END ========================= -->
 
 <!-- ==================== wat is azure SERVICE START ========================= -->
 <div class="service-area sec-spacer pb-0">
