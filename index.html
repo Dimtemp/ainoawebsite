@@ -16,7 +16,6 @@ layout: default
           </div>
         </div>
         <div class="col-md-4">
-           
         </div>
       </div>
     </div>
@@ -56,7 +55,7 @@ layout: default
 <!-- ==================== SERVICE END ========================= -->
 
 <!-- ==================== FEATURE START ========================= -->
-<div class="feature-area inner-spacer">
+<div class="feature-area inner-spacer bg-2">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -68,7 +67,6 @@ layout: default
     <div class="row">
 	   {% assign myservice = site.services %}
       {% assign sorted_service = myservice | sort:"order" %}
-					 
       {% for service in sorted_service %}
         {% include service-card.html %}
       {% endfor %}
@@ -114,7 +112,7 @@ layout: default
 </div>
 <!-- ==================== SERVICE END ========================= -->
 
-<!-- ==================== CLIENT START ========================= -->
+<!-- ==================== REFERENTIES CLIENT START ========================= -->
 <div class="client-area sec-spacer bg-2">
   <div class="container">
     <div class="section-title inner-spacer text-center pt-0">
@@ -131,7 +129,7 @@ Bekijk alle referenties</a></div>
     </div>
   </div>
 </div>
-<!-- ==================== CLIENT END ========================= -->
+<!-- ==================== REFERENTIES CLIENT END ========================= -->
 
 <div class="blog-grid-area sec-spacer">
   <div class="container">
