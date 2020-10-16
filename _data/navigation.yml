@@ -15,8 +15,15 @@
       url: /service/azure-data-platform-bootcamp-dp-200-201/
     - text: Azure Relational Databases AZ-300
       url: /service/azure-relational-dp-300/
-- text: Team
-  url: /our-team
+- text: Praktisch
+  url: /praktisch
+  submenu:
+    - text: Locaties
+      url: /locaties
+    - text: Team
+      url: /our-team
+    - text: Corona
+      url: /corona
 - text: Nieuws & Updates
   url: /blog
 - text: Contact
